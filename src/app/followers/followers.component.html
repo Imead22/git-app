@@ -1,0 +1,25 @@
+<div>
+  <div *ngIf="followers.length">
+    <ul class="followers">
+      <li *ngFor="let follower of followers" class="container mt-3">
+        <div class="row">
+          <div class="col-sm-1">
+            <img src="{{follower.avatar_url}}" width="90px" height="90px" class="img-fluid rounded-circle" alt=""/>
+          </div>
+          <div class="col-sm-11">
+            <div class="row">
+              <div class="col">
+                <b>{{follower.login}}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a href="{{follower.html_url}}">{{follower.html_url}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

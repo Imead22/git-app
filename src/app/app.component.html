@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <h1>
+    {{title}}
+  </h1>
+  <div>
+    <div class="row">
+      <div class="col-sm-2 d-flex flex-column align-items-end">
+        <input id="login" [(ngModel)]="login" placeholder="login">
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id="getFollowers">
+          Get followers
+        </button>
+      </div>
+    </div>
+    <app-followers [login]="login"></app-followers>
+  </div>
+</div>

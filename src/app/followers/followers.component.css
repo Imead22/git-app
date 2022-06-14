@@ -1,0 +1,32 @@
+li {
+  list-style-type: none;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
